@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Maternidad La Floresta | Excelencia Médica</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-landing">
+    <!-- WOW FACTOR: Preloader -->
+    <div id="global-preloader">
+        <div class="preloader-heartbeat"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="particles-background"></div>
+
+    <div class="topbar">
+        <div class="container flex-between">
+            <div class="contact-info">
+                <span class="pulse-animation"><i class="fa-solid fa-phone"></i> Emergencias 24/7: 0500-FLORESTA</span>
+                <span><i class="fa-solid fa-location-dot"></i> Urb. La Floresta, Maracay</span>
+            </div>
+            <div class="socials">
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar" class="glass-navbar landing-header">
+
+        <div class="container flex-between">
+            <a href="index.html" class="logo logo-full">
+                <div class="logo-icon-wrapper logo-img-wrapper">
+                    <img src="logo.png" alt="Maternidad La Floresta" class="logo-img"
+                        onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex');};">
+                    <i class="fa-solid fa-heart-pulse logo-fallback" style="display:none;"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>La Floresta</h1>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span>Inicio</span></a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link"><span>Quiénes Somos</span></a></li>
+                    <li><a href="servicios.html" class="nav-link"><span>Servicios</span></a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <span>Comunidad</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Centro de Noticias</a>
+                            </li>
+                            <li><a href="galeria.html"><i class="fa-solid fa-images"></i> Galería Bebés</a></li>
+                            <li><a href="talento.html"><i class="fa-solid fa-user-tie"></i> Únete al Equipo</a></li>
+                            <li><a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ / Ayuda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="directorio.html" class="nav-link"><span>Directorio Médico</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="presupuesto.html" class="btn btn-outline btn-glow">Presupuesto Online</a>
+                <a href="aps.html" class="btn btn-primary btn-gradient"><i class="fa-solid fa-stethoscope"></i> Portal
+                    APS</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SERVICES TICKER MARQUEE -->
+    <div class="services-ticker-wrapper">
+        <div class="services-ticker-content">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área
+                Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad
+                Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="services-ticker-content" aria-hidden="true">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área
+                Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad
+                Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+    </div>
+
+    <section id="inicio" class="hero-slider swiper">
+        <div class="hero-brand-watermark">
+            <img src="rosa-logo.png" alt="" aria-hidden="true"
+                onerror="this.src='assets/rosa-logo.png';this.onerror=function(){this.parentElement.style.display='none';};">
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+                <div class="slide-background"></div>
+                <div class="overlay-gradient"></div>
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                    <span class="tag tag-animated">
+                        <i class="fa-solid fa-sparkles"></i>
+                        Nueva Unidad de Cuidados Intensivos
+                    </span>
+                    <h1 class="hero-title">
+                        <span class="title-line">Tecnología que protege</span>
+                        <span class="title-line highlight">lo que más amas.</span>
+                    </h1>
+                    <p class="hero-description">Infraestructura renovada con monitoreo fetal de última generación y
+                        equipos de vanguardia para garantizar la seguridad de tu familia.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary btn-large btn-magnetic">
+                            <span>Conocer Instalaciones</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn btn-white btn-large btn-magnetic">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Ver Video</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-2">
+                <div class="slide-background"></div>
+                <div class="overlay-gradient"></div>
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                    <span class="tag tag-animated">
+                        <i class="fa-solid fa-heart"></i>
+                        Parto Humanizado
+                    </span>
+                    <h1 class="hero-title">
+                        <span class="title-line">Una experiencia única</span>
+                        <span class="title-line highlight">para dar a luz.</span>
+                    </h1>
+                    <p class="hero-description">Acompañamiento profesional respetando tus tiempos y decisiones. Cada
+                        nacimiento es único y especial.</p>
+                    <div class="btn-group">
+                        <a href="planes-maternidad.html" class="btn btn-primary btn-large btn-magnetic">
+                            <span>Plan de Maternidad</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+        <div class="scroll-indicator">
+            <span>Desliza para explorar</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de - Elegante y Moderna -->
+    <section id="acerca-de" class="section-padding about-section-premium">
+        <div class="container">
+            <div class="about-content-wrapper" data-aos="fade-up">
+                <div class="about-text-block">
+                    <span class="subtitle subtitle-animated">
+                        <span class="subtitle-line"></span>
+                        Acerca de La Floresta
+                    </span>
+                    <h2 class="section-title">
+                        Más de <span class="gradient-text">34 años</span> cuidando lo que más amas
+                    </h2>
+                    <p class="about-description">
+                        Somos una institución hospitalaria de vanguardia especializada en la atención de la madre e hijo
+                        antes, durante y después del proceso de gestación. Comprometidos con la excelencia médica y la
+                        calidez humana.
+                    </p>
+                    <div class="about-stats-inline">
+                        <div class="stat-inline">
+                            <div class="stat-number-inline" data-target="20000">0</div>
+                            <div class="stat-label-inline">Bebés Nacidos</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-inline">
+                            <div class="stat-number-inline" data-target="34">0</div>
+                            <div class="stat-label-inline">Años de Experiencia</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-inline">
+                            <div class="stat-number-inline" data-target="50">0</div>
+                            <div class="stat-label-inline">Médicos Especialistas</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-inline">
+                            <div class="stat-number-inline" data-target="98">0</div>
+                            <div class="stat-label-inline">% Satisfacción</div>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="sobre-nosotros.html" class="btn btn-primary btn-large">
+                            <span>Conoce nuestra historia</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="contacto.html" class="btn btn-outline btn-large">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <span>Visítanos</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image-block" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&q=80&w=800"
+                            alt="Maternidad La Floresta"
+                            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80';">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-badge">
+                        <i class="fa-solid fa-award"></i>
+                        <div>
+                            <strong>34+</strong>
+                            <span>Años</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section-padding bg-light">
+        <div class="container split-layout">
+            <div class="text-block" data-aos="fade-right" data-aos-duration="1000">
+                <span class="subtitle subtitle-animated">
+                    <span class="subtitle-line"></span>
+                    Nuestro Compromiso
+                </span>
+                <h2 class="section-title">
+                    Liderando la atención
+                    <span class="gradient-text">materno-infantil</span> en Aragua
+                </h2>
+                <p class="section-description">Con más de 34 años de trayectoria, hemos evolucionado para combinar la
+                    calidez humana con la precisión tecnológica. No somos solo una clínica, somos el lugar donde
+                    comienzan las historias más hermosas.</p>
+                <ul class="check-list">
+                    <li class="check-item">
+                        <div class="check-icon-wrapper">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span>UCI Neonatal de alta complejidad con tecnología de punta.</span>
+                    </li>
+                    <li class="check-item">
+                        <div class="check-icon-wrapper">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span>Habitaciones Suite para recuperación familiar con todas las comodidades.</span>
+                    </li>
+                    <li class="check-item">
+                        <div class="check-icon-wrapper">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span>Planta eléctrica y seguridad garantizada 24/7.</span>
+                    </li>
+                </ul>
+                <a href="sobre-nosotros.html" class="btn btn-primary btn-large">
+                    <span>Conoce más sobre nosotros</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="image-block" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=800"
+                        alt="Instalaciones Médicas"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80';">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="experience-badge floating-badge">
+                    <div class="badge-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div class="badge-content">
+                        <span class="number">20+</span>
+                        <span class="text">Años de<br>Experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section-padding services-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="subtitle subtitle-animated">
+                    <span class="subtitle-line"></span>
+                    Atención Integral
+                </span>
+                <h2 class="section-title">
+                    Nuestras <span class="gradient-text">Especialidades</span>
+                </h2>
+                <p class="section-description">Servicios médicos de excelencia con tecnología de vanguardia y atención
+                    humanizada</p>
+            </div>
+
+            <div class="tabs-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="tabs-header">
+                    <button class="tab-btn active" onclick="openTab(event, 'Maternidad')">
+                        <i class="fa-solid fa-baby"></i>
+                        <span>Maternidad</span>
+                    </button>
+                    <button class="tab-btn" onclick="openTab(event, 'Pediatria')">
+                        <i class="fa-solid fa-child"></i>
+                        <span>Pediatría</span>
+                    </button>
+                    <button class="tab-btn" onclick="openTab(event, 'Imagenes')">
+                        <i class="fa-solid fa-x-ray"></i>
+                        <span>Imágenes</span>
+                    </button>
+                    <button class="tab-btn" onclick="openTab(event, 'Quirurgico')">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>Área Quirúrgica</span>
+                    </button>
+                </div>
+
+                <div id="Maternidad" class="tab-content active">
+                    <div class="tab-grid">
+                        <div class="tab-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1493863784196-809bb840e698?auto=format&fit=crop&q=80&w=600"
+                                alt="Maternidad"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80';">
+                            <div class="image-overlay-gradient"></div>
+                        </div>
+                        <div class="tab-text">
+                            <h3>Unidad de la Mujer</h3>
+                            <p>Desde el control prenatal hasta el postparto. Contamos con salas de labor equipadas para
+                                monitoreo continuo y quirófanos exclusivos para cesáreas con tecnología de última
+                                generación.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Control prenatal avanzado</li>
+                                <li><i class="fa-solid fa-check"></i> Salas de parto modernas</li>
+                                <li><i class="fa-solid fa-check"></i> Postparto especializado</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <span>Ver paquetes de maternidad</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="Pediatria" class="tab-content" style="display:none">
+                    <div class="tab-grid">
+                        <div class="tab-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&q=80&w=600"
+                                alt="Pediatria"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1631815589966-28c2f53d3a8c?w=600&q=80';">
+                            <div class="image-overlay-gradient"></div>
+                        </div>
+                        <div class="tab-text">
+                            <h3>Atención Pediátrica Integral</h3>
+                            <p>Emergencia pediátrica 24 horas y subespecialidades: Cardiología, Neurología y
+                                Neumonología infantil con equipos especializados.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Emergencia 24/7</li>
+                                <li><i class="fa-solid fa-check"></i> Subespecialidades</li>
+                                <li><i class="fa-solid fa-check"></i> Atención integral</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <span>Conocer más</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="Imagenes" class="tab-content" style="display:none">
+                    <div class="tab-grid">
+                        <div class="tab-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=600"
+                                alt="Imagenes"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80';">
+                            <div class="image-overlay-gradient"></div>
+                        </div>
+                        <div class="tab-text">
+                            <h3>Diagnóstico por Imágenes</h3>
+                            <p>Equipos de última generación para diagnóstico preciso: ecografías 4D, resonancias
+                                magnéticas y tomografías computarizadas.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Ecografías 4D</li>
+                                <li><i class="fa-solid fa-check"></i> Resonancia magnética</li>
+                                <li><i class="fa-solid fa-check"></i> Tomografía computarizada</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <span>Agendar estudio</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="Quirurgico" class="tab-content" style="display:none">
+                    <div class="tab-grid">
+                        <div class="tab-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=600"
+                                alt="Quirurgico"
+                                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80';">
+                            <div class="image-overlay-gradient"></div>
+                        </div>
+                        <div class="tab-text">
+                            <h3>Área Quirúrgica</h3>
+                            <p>Quirófanos equipados con tecnología avanzada para procedimientos quirúrgicos seguros y
+                                eficientes.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Quirófanos modernos</li>
+                                <li><i class="fa-solid fa-check"></i> Cirugía mínimamente invasiva</li>
+                                <li><i class="fa-solid fa-check"></i> Equipos de última generación</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">
+                                <span>Información quirúrgica</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section-padding bg-dark text-white gallery-section">
+        <div class="gallery-background-pattern"></div>
+        <div class="container">
+            <div class="flex-between align-end mb-4" data-aos="fade-up">
+                <div>
+                    <span class="subtitle text-accent subtitle-animated">
+                        <span class="subtitle-line"></span>
+                        Nuevos Miembros
+                    </span>
+                    <h2 class="section-title text-white">
+                        Nacidos en <span class="gradient-text-light">La Floresta</span>
+                    </h2>
+                </div>
+                <a href="galeria.html" class="btn btn-outline-white btn-large">
+                    <span>Ver Galería Completa</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="swiper gallery-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <div class="gallery-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=400"
+                                    alt="Bebé"
+                                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&q=80';">
+                                <div class="gallery-overlay"></div>
+                                <div class="gallery-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="baby-info">
+                                <h5>Lucía</h5>
+                                <small><i class="fa-solid fa-calendar"></i> 12/10/2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <div class="gallery-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80&w=400"
+                                    alt="Bebé"
+                                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80';">
+                                <div class="gallery-overlay"></div>
+                                <div class="gallery-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="baby-info">
+                                <h5>Matías</h5>
+                                <small><i class="fa-solid fa-calendar"></i> 14/10/2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <div class="gallery-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1510154221590-478a47ba8d6f?auto=format&fit=crop&q=80&w=400"
+                                    alt="Bebé"
+                                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&q=80';">
+                                <div class="gallery-overlay"></div>
+                                <div class="gallery-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="baby-info">
+                                <h5>Sofia</h5>
+                                <small><i class="fa-solid fa-calendar"></i> 15/10/2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <div class="gallery-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1544126566-475a106209b5?auto=format&fit=crop&q=80&w=400"
+                                    alt="Bebé"
+                                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&q=80';">
+                                <div class="gallery-overlay"></div>
+                                <div class="gallery-icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="baby-info">
+                                <h5>Andrés</h5>
+                                <small><i class="fa-solid fa-calendar"></i> 16/10/2025</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios Premium -->
+    <section class="section-padding testimonials-section bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="subtitle subtitle-animated">
+                    <span class="subtitle-line"></span>
+                    Historias Reales
+                </span>
+                <h2 class="section-title">
+                    Lo que dicen nuestras <span class="gradient-text">familias</span>
+                </h2>
+                <p class="text-muted">Más de 20,000 familias han confiado en nosotros</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>María González</h4>
+                            <p>Madre de Lucía</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Una experiencia increíble desde el primer día. El personal es
+                        excepcional y las instalaciones son de primera. Nuestra hija nació en las mejores manos."</p>
+                    <div class="testimonial-date">
+                        <i class="fa-solid fa-calendar"></i> Octubre 2025
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>Padre de Matías</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"La atención en la UCI Neonatal fue excepcional. Los médicos nos
+                        mantuvieron informados en todo momento y nuestro bebé recibió el mejor cuidado posible."</p>
+                    <div class="testimonial-date">
+                        <i class="fa-solid fa-calendar"></i> Octubre 2025
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Ana Martínez</h4>
+                            <p>Madre de Sofía</p>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"El parto humanizado fue exactamente lo que esperábamos. Respetaron
+                        nuestros tiempos y decisiones. Una experiencia única e inolvidable."</p>
+                    <div class="testimonial-date">
+                        <i class="fa-solid fa-calendar"></i> Octubre 2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Certificaciones y Reconocimientos -->
+    <section class="section-padding certifications-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="subtitle subtitle-animated">
+                    <span class="subtitle-line"></span>
+                    Reconocimientos
+                </span>
+                <h2 class="section-title">
+                    Certificaciones y <span class="gradient-text">Acreditaciones</span>
+                </h2>
+                <p class="text-muted">Comprometidos con la excelencia y calidad en salud</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4>Acreditación Nacional</h4>
+                    <p>Certificados por el Ministerio de Salud</p>
+                </div>
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4>ISO 9001</h4>
+                    <p>Sistema de Gestión de Calidad</p>
+                </div>
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h4>UCI Neonatal</h4>
+                    <p>Nivel III de Alta Complejidad</p>
+                </div>
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Excelencia Médica</h4>
+                    <p>Reconocimiento Regional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contador en Vivo de Bebés Nacidos -->
+    <section class="section-padding live-counter-section bg-dark text-white">
+        <div class="container">
+            <div class="live-counter-wrapper" data-aos="fade-up">
+                <div class="live-counter-icon">
+                    <i class="fa-solid fa-baby"></i>
+                    <div class="pulse-ring"></div>
+                </div>
+                <div class="live-counter-content">
+                    <h3>Bebés Nacidos Hoy</h3>
+                    <div class="live-counter-number" id="babiesToday">0</div>
+                    <p class="live-counter-subtitle">Cada vida es una celebración</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding partners-section">
+        <div class="container text-center">
+            <div data-aos="fade-up">
+                <span class="subtitle subtitle-animated">
+                    <span class="subtitle-line"></span>
+                    Convenios y Seguros
+                </span>
+                <h2 class="section-title">
+                    Trabajamos con los principales <span class="gradient-text">seguros</span>
+                </h2>
+                <p class="mb-4 text-muted">Aceptamos seguros nacionales e internacionales para tu tranquilidad</p>
+                <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <div class="marquee-content">
+                        <div class="marquee-item">Seguros Mercantil</div>
+                        <div class="marquee-item">Seguros Caracas</div>
+                        <div class="marquee-item">Mapfre</div>
+                        <div class="marquee-item">Banesco Seguros</div>
+                        <div class="marquee-item">Pirámide</div>
+                        <div class="marquee-item">Banco Central</div>
+                        <div class="marquee-item">VUMI</div>
+                        <div class="marquee-item">Hispana de Seguros</div>
+                    </div>
+                    <!-- Exactly duplicated block for seamless infinite scrolling -->
+                    <div class="marquee-content" aria-hidden="true">
+                        <div class="marquee-item">Seguros Mercantil</div>
+                        <div class="marquee-item">Seguros Caracas</div>
+                        <div class="marquee-item">Mapfre</div>
+                        <div class="marquee-item">Banesco Seguros</div>
+                        <div class="marquee-item">Pirámide</div>
+                        <div class="marquee-item">Banco Central</div>
+                        <div class="marquee-item">VUMI</div>
+                        <div class="marquee-item">Hispana de Seguros</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer-modern">
+        <div class="footer-background"></div>
+        <div class="container footer-grid footer-grid-3">
+            <div class="footer-col" data-aos="fade-up">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="La Floresta" class="footer-logo-img" onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex';};">
+                    <i class="fa-solid fa-heart-pulse footer-logo-fallback" style="display:none;"></i>
+                    <h3>La Floresta</h3>
+                </div>
+                <p>Centro Clínico Maternidad La Floresta. RIF: J-12345678-9. Comprometidos con la vida desde el primer latido.</p>
+                <div class="footer-socials" style="margin-top: 24px;">
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Contacto Directo</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p>Urb. La Floresta, Maracay.</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>admision@lafloresta.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+58 412 1967195</p>
+                </div>
+            </div>
+            <div class="footer-map-col" data-aos="fade-up" data-aos-delay="300">
+                <h4>Ubicación</h4>
+                <div class="footer-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.123456789!2d-67.123456789!3d10.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24cab9b4de88305a!2sMaternidad%20La%20Floresta!5e0!3m2!1ses!2sve!4v1234567890123!5m2!1ses!2sve" loading="lazy"></iframe>
+                </div>
+                <a href="#" class="btn-review">
+                    <i class="fa-solid fa-star"></i> Dejar Opinión
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Clínica La Floresta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp Premium -->
+    <a href="https://wa.me/584121967195?text=Hola,%20me%20gustaría%20agendar%20una%20cita" class="whatsapp-float"
+        target="_blank" aria-label="Contactar por WhatsApp">
+        <div class="whatsapp-icon-wrapper">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-pulse"></span>
+        <div class="whatsapp-tooltip">¿Necesitas ayuda? Escríbenos</div>
+    </a>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- WOW FACTOR: Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- WOW FACTOR: Vanilla Tilt for 3D Hover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</body>
+
+</html>

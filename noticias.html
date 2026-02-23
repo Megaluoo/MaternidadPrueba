@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Novedades | Clínica Maternidad La Floresta</title>
+    <meta name="description"
+        content="Mantente informado con las últimas noticias, tips de salud materna, nacimientos del mes y avances médicos en Maternidad La Floresta.">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-pages.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-internal template-blog">
+    <!-- WOW FACTOR: Preloader -->
+    <div id="global-preloader">
+        <div class="preloader-heartbeat"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="particles-background"></div>
+
+    <div class="topbar">
+        <div class="container flex-between">
+            <div class="contact-info">
+                <span class="pulse-animation"><i class="fa-solid fa-phone"></i> Emergencias 24/7: 0500-FLORESTA</span>
+                <span><i class="fa-solid fa-location-dot"></i> Urb. La Floresta, Maracay</span>
+            </div>
+            <div class="socials">
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar" class="glass-navbar page-header">
+        <div class="container flex-between">
+            <a href="index.html" class="logo logo-full">
+                <div class="logo-icon-wrapper logo-img-wrapper">
+                    <img src="logo.png" alt="Maternidad La Floresta" class="logo-img"
+                        onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex');};">
+                    <i class="fa-solid fa-heart-pulse logo-fallback" style="display:none;"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>La Floresta</h1>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span>Inicio</span></a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link"><span>Quiénes Somos</span></a></li>
+                    <li><a href="servicios.html" class="nav-link"><span>Servicios</span></a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <span>Comunidad</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Centro de Noticias</a></li>
+                            <li><a href="galeria.html"><i class="fa-solid fa-images"></i> Galería Bebés</a></li>
+                            <li><a href="talento.html"><i class="fa-solid fa-user-tie"></i> Únete al Equipo</a></li>
+                            <li><a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ / Ayuda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="directorio.html" class="nav-link"><span>Directorio Médico</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="presupuesto.html" class="btn btn-outline btn-glow">Presupuesto Online</a>
+                <!-- WOW FACTOR: Dark Mode Toggle Moved Here -->
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode"
+                    style="position: relative; top: auto; right: auto; margin-left: 15px;">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SERVICES TICKER MARQUEE -->
+    <div class="services-ticker-wrapper">
+        <div class="services-ticker-content">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="services-ticker-content" aria-hidden="true">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+    </div>
+
+    <main class="page-main">
+        <section class="page-hero" style="padding-bottom: 60px;">
+            <div class="container text-center">
+                <span class="subtitle tag-animated">
+                    <i class="fa-solid fa-newspaper"></i> Actualidad Médica
+                </span>
+                <h1 class="page-title">Centro de <span class="gradient-text">Noticias</span></h1>
+                <p class="page-lead">Descubre los últimos avances, tips de salud materna, historias inspiradoras y el
+                    talento detrás de cada latido.</p>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container">
+                <!-- FEATURED POST -->
+                <div class="featured-post" data-aos="fade-up">
+                    <div class="featured-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+                            alt="Médico revisando equipos">
+                        <div class="post-badge">Destacado</div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="post-meta">
+                            <span><i class="fa-regular fa-calendar"></i> 20 Feb, 2026</span>
+                            <span><i class="fa-solid fa-tag"></i> Innovación</span>
+                        </div>
+                        <h2>Inauguración de la Nueva Área de Terapia Intensiva Neonatal (UTIN)</h2>
+                        <p>Nos enorgullece presentar la ampliación de nuestra Unidad de Terapia Intensiva Neonatal.
+                            Equipada con incubadoras de última generación y ventiladores mecanizados de grado humanoide,
+                            garantizamos el mayor nivel de cuidado para los recién nacidos que requieren atención
+                            crítica en el centro del país.</p>
+                        <a href="#" class="btn btn-outline btn-glow">Leer Artículo Completo <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- BLOG GRID -->
+                <div class="blog-grid" style="margin-top: 60px;">
+                    <!-- Post 1 -->
+                    <article class="blog-card card-hover" data-aos="fade-up" data-aos-delay="100">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df4?auto=format&fit=crop&q=80&w=600"
+                                alt="Bebé recién nacido">
+                            <div class="blog-category">Maternidad</div>
+                        </div>
+                        <div class="blog-body">
+                            <div class="post-meta">
+                                <span><i class="fa-regular fa-clock"></i> Hace 3 días</span>
+                            </div>
+                            <h3>5 Tips Esenciales para Preparar tu Bolso de Parto</h3>
+                            <p>El momento tan esperado se acerca. Asegúrate de tener todo lo necesario para ti y para el
+                                bebé siguiendo nuestra guía respaldada por nuestros especialistas.</p>
+                            <a href="#" class="read-more">Leer más <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="blog-card card-hover" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&q=80&w=600"
+                                alt="Ecografía de bebé">
+                            <div class="blog-category">Salud Fetal</div>
+                        </div>
+                        <div class="blog-body">
+                            <div class="post-meta">
+                                <span><i class="fa-regular fa-clock"></i> Hace 1 semana</span>
+                            </div>
+                            <h3>La Importancia de la Ecografía Morfológica del 2do Trimestre</h3>
+                            <p>Conoce por qué el eco morfológico es uno de los estudios más cruciales durante tu
+                                embarazo y qué anomalías podemos descartar a tiempo con el uso de ecosonografía 3D y 4D.
+                            </p>
+                            <a href="#" class="read-more">Leer más <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="blog-card card-hover" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=600"
+                                alt="Estetoscopio en forma de corazón">
+                            <div class="blog-category">Prevención</div>
+                        </div>
+                        <div class="blog-body">
+                            <div class="post-meta">
+                                <span><i class="fa-regular fa-clock"></i> Hace 2 semanas</span>
+                            </div>
+                            <h3>¿Por qué crear un perfil de Atención Primaria (APS)?</h3>
+                            <p>La prevención salva vidas. Descubre cómo nuestros programas de APS pueden ayudar a tu
+                                familia a mantenerse saludable mediante chequeos rutinarios anuales.</p>
+                            <a href="#" class="read-more">Leer más <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="pagination" data-aos="fade-up" style="margin-top: 50px; text-align: center;">
+                    <a href="#" class="btn btn-outline disabled"><i class="fa-solid fa-chevron-left"></i> Anterior</a>
+                    <a href="#" class="btn btn-primary">1</a>
+                    <a href="#" class="btn btn-outline">2</a>
+                    <a href="#" class="btn btn-outline">3</a>
+                    <a href="#" class="btn btn-outline">Siguiente <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER CTA -->
+        <section class="section-padding newsletter-section"
+            style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white;">
+            <div class="container text-center" data-aos="fade-up">
+                <i class="fa-regular fa-envelope"
+                    style="font-size: 3rem; margin-bottom: 20px; color: var(--accent);"></i>
+                <h2 style="color: white; font-size: 2.2rem; margin-bottom: 15px;">Suscríbete a nuestro Boletín</h2>
+                <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto 30px;">Recibe los mejores
+                    consejos médicos, noticias sobre jornadas de vacunación y descuentos especiales directamente en tu
+                    correo.</p>
+
+                <form class="newsletter-form" style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Tu correo electrónico" required
+                        style="flex: 1; padding: 15px 25px; border-radius: 30px; border: none; font-size: 1rem; outline: none;">
+                    <button type="submit" class="btn btn-accent"
+                        style="border-radius: 30px; padding: 15px 30px; font-weight: 700; background: var(--accent); color: var(--dark); border: none; cursor: pointer;">Suscribirme</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-modern">
+        <div class="footer-background"></div>
+        <div class="container footer-grid footer-grid-3">
+            <div class="footer-col" data-aos="fade-up">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="La Floresta" class="footer-logo-img" onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex';};">
+                    <i class="fa-solid fa-heart-pulse footer-logo-fallback" style="display:none;"></i>
+                    <h3>La Floresta</h3>
+                </div>
+                <p>Centro Clínico Maternidad La Floresta. RIF: J-12345678-9. Comprometidos con la vida desde el primer latido.</p>
+                <div class="footer-socials" style="margin-top: 24px;">
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Contacto Directo</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p>Urb. La Floresta, Maracay.</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>admision@lafloresta.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+58 412 1967195</p>
+                </div>
+            </div>
+            <div class="footer-map-col" data-aos="fade-up" data-aos-delay="300">
+                <h4>Ubicación</h4>
+                <div class="footer-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.123456789!2d-67.123456789!3d10.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24cab9b4de88305a!2sMaternidad%20La%20Floresta!5e0!3m2!1ses!2sve!4v1234567890123!5m2!1ses!2sve" loading="lazy"></iframe>
+                </div>
+                <a href="#" class="btn-review">
+                    <i class="fa-solid fa-star"></i> Dejar Opinión
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Clínica La Floresta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WOW FACTOR: Vanilla Tilt for 3D Hover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+    </script>
+</body>
+
+</html>

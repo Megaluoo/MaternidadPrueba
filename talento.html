@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete a Nuestro Equipo | Clínica Maternidad La Floresta</title>
+    <meta name="description"
+        content="Desarrolla tu carrera profesional en Maternidad La Floresta. Buscamos talento médico, administrativo y de enfermería apasionado por dar vida.">
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-pages.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body class="page-internal template-careers">
+    <!-- WOW FACTOR: Preloader -->
+    <div id="global-preloader">
+        <div class="preloader-heartbeat"></div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="particles-background"></div>
+
+    <div class="topbar">
+        <div class="container flex-between">
+            <div class="contact-info">
+                <span class="pulse-animation"><i class="fa-solid fa-phone"></i> RRHH: 0500-FLORESTA ext 4</span>
+                <span><i class="fa-solid fa-location-dot"></i> Urb. La Floresta, Maracay</span>
+            </div>
+            <div class="socials">
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar" class="glass-navbar page-header">
+        <div class="container flex-between">
+            <a href="index.html" class="logo logo-full">
+                <div class="logo-icon-wrapper logo-img-wrapper">
+                    <img src="logo.png" alt="Maternidad La Floresta" class="logo-img"
+                        onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex');};">
+                    <i class="fa-solid fa-heart-pulse logo-fallback" style="display:none;"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>La Floresta</h1>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span>Inicio</span></a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link"><span>Quiénes Somos</span></a></li>
+                    <li><a href="servicios.html" class="nav-link"><span>Servicios</span></a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <span>Comunidad</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Centro de Noticias</a></li>
+                            <li><a href="galeria.html"><i class="fa-solid fa-images"></i> Galería Bebés</a></li>
+                            <li><a href="talento.html"><i class="fa-solid fa-user-tie"></i> Únete al Equipo</a></li>
+                            <li><a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ / Ayuda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="directorio.html" class="nav-link"><span>Directorio Médico</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#vacantes" class="btn btn-primary btn-gradient">Ver Vacantes</a>
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode"
+                    style="position: relative; top: auto; right: auto; margin-left: 15px;">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- SERVICES TICKER MARQUEE -->
+    <div class="services-ticker-wrapper">
+        <div class="services-ticker-content">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="services-ticker-content" aria-hidden="true">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+    </div>
+
+    <main class="page-main">
+        <section class="page-hero" style="padding-bottom: 60px;">
+            <div class="container text-center">
+                <span class="subtitle tag-animated">
+                    <i class="fa-solid fa-briefcase"></i> Oportunidades Profesionales
+                </span>
+                <h1 class="page-title">Construye tu <span class="gradient-text">Carrera</span> con Nosotros</h1>
+                <p class="page-lead">Buscamos mentes brillantes y corazones compasivos para unirse a la clínica de
+                    maternidad líder en la región central.</p>
+            </div>
+        </section>
+
+        <!-- CULTURE SECTION -->
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="grid-2 align-center">
+                    <div class="content-side" data-aos="fade-right">
+                        <h2 class="section-title">¿Por qué trabajar en <span class="gradient-text">La Floresta?</span>
+                        </h2>
+                        <p class="mb-4 text-muted">No somos solo un centro médico; somos el lugar donde comienzan miles
+                            de historias cada año. Creemos en empoderar a nuestros empleados mediante crecimiento
+                            constante, tecnología puntera y un clima laboral excepcional.</p>
+
+                        <div class="culture-benefits">
+                            <div class="benefit-item">
+                                <div class="benefit-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div>
+                                    <h4>Desarrollo Continuo</h4>
+                                    <p>Acceso a simposios, talleres pagados y rotaciones formativas.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                                <div>
+                                    <h4>Seguro de Salud Premium</h4>
+                                    <p>Cobertura integral (APS) gratuita para ti y condiciones preferenciales para tu
+                                        familia directa.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                                <div>
+                                    <h4>Espacios Diseñados para Ti</h4>
+                                    <p>Salas de descanso modernas, comedor subsidiado y áreas de relajación.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-side" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800"
+                            alt="Equipo Médico Colaborando" class="radius-lg shadow-xl"
+                            style="width: 100%; border: 1px solid var(--glass-border);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPEN POSITIONS -->
+        <section id="vacantes" class="section-padding">
+            <div class="container container-narrow">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Vacantes <span class="gradient-text">Abiertas</span></h2>
+                    <p class="text-muted">Explora nuestras oportunidades actuales o envíanos tu CV para futuras
+                        posiciones.</p>
+                </div>
+
+                <div class="jobs-accordion" data-aos="fade-up">
+                    <!-- JOB 1 -->
+                    <div class="faq-item job-item">
+                        <button class="faq-question job-header">
+                            <div>
+                                <strong>Enfermera(o) Especialista en Neonatología (UTIN)</strong>
+                                <br><small class="text-muted"><i class="fa-solid fa-clock"></i> Tiempo Completo | <i
+                                        class="fa-solid fa-location-dot"></i> Presencial</small>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer job-details">
+                            <div style="padding: 20px;">
+                                <h5>Requisitos:</h5>
+                                <ul>
+                                    <li>Licenciatura en Enfermería con especialidad comprobada en Cuidados Intensivos
+                                        Neonatales.</li>
+                                    <li>Mínimo 3 años de experiencia en Unidades Nivel III.</li>
+                                    <li>Disponibilidad para turnos rotativos.</li>
+                                </ul>
+                                <a href="#apply" class="btn btn-sm btn-accent mt-3">Postularse a esta vacante</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JOB 2 -->
+                    <div class="faq-item job-item">
+                        <button class="faq-question job-header">
+                            <div>
+                                <strong>Ejecutivo(a) de Admisión y Presupuestos</strong>
+                                <br><small class="text-muted"><i class="fa-solid fa-clock"></i> Tiempo Completo | <i
+                                        class="fa-solid fa-location-dot"></i> Presencial</small>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer job-details">
+                            <div style="padding: 20px;">
+                                <h5>Requisitos:</h5>
+                                <ul>
+                                    <li>Experiencia mínima de 2 años en clínicas o seguros médicos aprobando claves.
+                                    </li>
+                                    <li>Manejo excelente de atención al público y empatía.</li>
+                                    <li>Conocimientos en baremos quirúrgicos y facturación.</li>
+                                </ul>
+                                <a href="#apply" class="btn btn-sm btn-accent mt-3">Postularse a esta vacante</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JOB 3 -->
+                    <div class="faq-item job-item">
+                        <button class="faq-question job-header">
+                            <div>
+                                <strong>Médico Residente (Guardias de Maternidad)</strong>
+                                <br><small class="text-muted"><i class="fa-solid fa-clock"></i> Guardias 24h | <i
+                                        class="fa-solid fa-location-dot"></i> Presencial</small>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer job-details">
+                            <div style="padding: 20px;">
+                                <h5>Requisitos:</h5>
+                                <ul>
+                                    <li>Médico Cirujano colegiado con matrícula del MPPS.</li>
+                                    <li>Experiencia asistiendo en partos y cesáreas (ideal residentes de postgrado de
+                                        Ginecología).</li>
+                                    <li>Certificado ACLS y BLS vigente.</li>
+                                </ul>
+                                <a href="#apply" class="btn btn-sm btn-accent mt-3">Postularse a esta vacante</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPLICATION FORM -->
+        <section id="apply" class="section-padding bg-light" style="border-top: 1px solid var(--glass-border);">
+            <div class="container container-narrow">
+                <div class="contact-form-container glass-panel card-hover" data-aos="zoom-in" style="margin: 0 auto;">
+                    <h3 class="text-center mb-4">Envía tu <span class="gradient-text">Currículum</span></h3>
+                    <p class="text-center text-muted mb-4">Si no encuentras una vacante específica, nuestro equipo de
+                        RRHH guardará tu perfil para el futuro.</p>
+
+                    <form id="jobApplicationForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="appName">Nombre Completo</label>
+                            <input type="text" id="appName" name="applicant_name" class="form-control" required
+                                placeholder="Ej. Dra. María Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="appEmail">Correo Electrónico</label>
+                            <input type="email" id="appEmail" name="applicant_email" class="form-control" required
+                                placeholder="tu@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="appPosition">Área de Interés / Vacante</label>
+                            <select id="appPosition" name="applicant_area" class="form-control" required>
+                                <option value="">Selecciona un área...</option>
+                                <option value="medicina">Medicina / Especialista</option>
+                                <option value="enfermeria">Enfermería</option>
+                                <option value="administrativo">Administrativo y Admisión</option>
+                                <option value="mantenimiento">Mantenimiento y Seguridad</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appMessage">Carta de Presentación (Breve)</label>
+                            <textarea id="appMessage" name="applicant_message" class="form-control" rows="4" required
+                                placeholder="Cuéntanos por qué quieres ser parte de la clínica..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-glow" style="width: 100%;">Enviar
+                            Postulación <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-modern">
+        <div class="footer-background"></div>
+        <div class="container footer-grid footer-grid-3">
+            <div class="footer-col" data-aos="fade-up">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="La Floresta" class="footer-logo-img" onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex';};">
+                    <i class="fa-solid fa-heart-pulse footer-logo-fallback" style="display:none;"></i>
+                    <h3>La Floresta</h3>
+                </div>
+                <p>Centro Clínico Maternidad La Floresta. RIF: J-12345678-9. Comprometidos con la vida desde el primer latido.</p>
+                <div class="footer-socials" style="margin-top: 24px;">
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Contacto Directo</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p>Urb. La Floresta, Maracay.</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>admision@lafloresta.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+58 412 1967195</p>
+                </div>
+            </div>
+            <div class="footer-map-col" data-aos="fade-up" data-aos-delay="300">
+                <h4>Ubicación</h4>
+                <div class="footer-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.123456789!2d-67.123456789!3d10.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24cab9b4de88305a!2sMaternidad%20La%20Floresta!5e0!3m2!1ses!2sve!4v1234567890123!5m2!1ses!2sve" loading="lazy"></iframe>
+                </div>
+                <a href="#" class="btn-review">
+                    <i class="fa-solid fa-star"></i> Dejar Opinión
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Clínica La Floresta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WOW FACTOR: Vanilla Tilt for 3D Hover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true, offset: 50 });
+
+        // Logic for Job Accordions (Reusing FAQ logic)
+        document.addEventListener('DOMContentLoaded', () => {
+            const jobQuestions = document.querySelectorAll('.job-header');
+
+            jobQuestions.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Close others
+                    jobQuestions.forEach(otherBtn => {
+                        if (otherBtn !== this && otherBtn.classList.contains('active')) {
+                            otherBtn.classList.remove('active');
+                            otherBtn.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+
+                    this.classList.toggle('active');
+                    const answer = this.nextElementSibling;
+                    if (this.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+
+            // Handle Application Form
+            const appForm = document.getElementById('jobApplicationForm');
+            if (appForm) {
+                appForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const btn = appForm.querySelector('button[type="submit"]');
+                    const originalText = btn.innerHTML;
+
+                    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Procesando...';
+
+                    setTimeout(() => {
+                        btn.innerHTML = '<i class="fa-solid fa-check"></i> Postulación Recibida';
+                        btn.style.background = 'var(--secondary)';
+
+                        setTimeout(() => {
+                            btn.innerHTML = originalText;
+                            btn.style.background = '';
+                            appForm.reset();
+                            alert("¡Gracias por querer ser parte de La Floresta! Nuestro departamento de Talento evaluará tu perfil.");
+                        }, 2000);
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

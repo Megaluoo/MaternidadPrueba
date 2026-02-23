@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Maternidad | Maternidad La Floresta</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-pages.css">
+
+    <!-- Scripts Principales -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- WOW FACTOR: Preloader -->
+    <div id="global-preloader">
+        <div class="preloader-heartbeat"></div>
+    </div>
+
+    <div class="topbar">
+        <div class="container flex-between">
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> Emergencias 24/7: 0500-FLORESTA</span>
+                <span><i class="fa-solid fa-location-dot"></i> Urb. La Floresta, Maracay</span>
+            </div>
+            <div class="socials">
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar">
+
+        <div class="container flex-between">
+            <a href="index.html" class="logo logo-full">
+                <div class="logo-icon-wrapper logo-img-wrapper">
+                    <img src="logo.png" alt="Maternidad La Floresta" class="logo-img" onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex');};">
+                    <i class="fa-solid fa-heart-pulse logo-fallback" style="display:none;"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>La Floresta</h1>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span>Inicio</span></a></li>
+                    <li><a href="sobre-nosotros.html" class="nav-link"><span>Quiénes Somos</span></a></li>
+                    <li><a href="servicios.html" class="nav-link"><span>Servicios</span></a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <span>Comunidad</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Centro de Noticias</a></li>
+                            <li><a href="galeria.html"><i class="fa-solid fa-images"></i> Galería Bebés</a></li>
+                            <li><a href="talento.html"><i class="fa-solid fa-user-tie"></i> Únete al Equipo</a></li>
+                            <li><a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ / Ayuda</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="directorio.html" class="nav-link"><span>Directorio Médico</span></a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="presupuesto.html" class="btn btn-outline btn-glow">Presupuesto Online</a>
+                <a href="aps.html" class="btn btn-primary btn-gradient"><i class="fa-solid fa-stethoscope"></i> Portal APS</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+</header>
+
+    <!-- SERVICES TICKER MARQUEE -->
+    <div class="services-ticker-wrapper">
+        <div class="services-ticker-content">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="services-ticker-content" aria-hidden="true">
+            <a href="servicios.html" class="ticker-item"><i class="fa-solid fa-baby"></i> Maternidad y Obstetricia</a>
+            <a href="emergencia.html" class="ticker-item"><i class="fa-solid fa-truck-medical"></i> Emergencia 24/7</a>
+            <a href="aps.html" class="ticker-item"><i class="fa-solid fa-stethoscope"></i> Atención Primaria (APS)</a>
+            <a href="ecografia-la-floresta.html" class="ticker-item"><i class="fa-solid fa-image"></i> Ecografía</a>
+            <a href="florlab.html" class="ticker-item"><i class="fa-solid fa-flask"></i> Laboratorio Clínico</a>
+            <a href="imeca.html" class="ticker-item"><i class="fa-solid fa-x-ray"></i> Imagenología (IMECA)</a>
+            <a href="servicios.html#quirurgico" class="ticker-item"><i class="fa-solid fa-user-doctor"></i> Área Quirúrgica</a>
+            <a href="unidad-cardiopulmonar.html" class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> Unidad Cardiopulmonar</a>
+            <a href="banco-sangre.html" class="ticker-item"><i class="fa-solid fa-droplet"></i> Banco de Sangre</a>
+            <a href="cefesmar.html" class="ticker-item"><i class="fa-solid fa-dna"></i> Fertilidad (CEFESMAR)</a>
+        </div>
+    </div>
+
+    <main class="page-main">
+        <section class="page-hero page-hero-small">
+            <div class="container">
+                <span class="subtitle subtitle-animated"><span class="subtitle-line"></span>Tu embarazo, nuestro compromiso</span>
+                <h1 class="page-title">Planes de <span class="gradient-text">Maternidad</span></h1>
+                <p class="page-lead">Paquetes integrales que cubren todo el proceso desde el control prenatal hasta el postparto.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="pricing-grid">
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="pricing-header">
+                            <h3>Plan Básico</h3>
+                            <div class="pricing-price">
+                                <span class="currency">Bs.</span>
+                                <span class="amount">Consultar</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Control prenatal (6 consultas)</li>
+                            <li><i class="fa-solid fa-check"></i> Ecografías básicas</li>
+                            <li><i class="fa-solid fa-check"></i> Parto o cesárea</li>
+                            <li><i class="fa-solid fa-check"></i> Hospitalización 2 días</li>
+                            <li><i class="fa-solid fa-check"></i> Atención al recién nacido</li>
+                        </ul>
+                        <a href="presupuesto.html" class="btn btn-outline btn-block">Solicitar información</a>
+                    </div>
+
+                    <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-badge">Más Popular</div>
+                        <div class="pricing-header">
+                            <h3>Plan Premium</h3>
+                            <div class="pricing-price">
+                                <span class="currency">Bs.</span>
+                                <span class="amount">Consultar</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Control prenatal completo (12 consultas)</li>
+                            <li><i class="fa-solid fa-check"></i> Ecografías 4D y Doppler</li>
+                            <li><i class="fa-solid fa-check"></i> Parto humanizado o cesárea</li>
+                            <li><i class="fa-solid fa-check"></i> Habitación Suite</li>
+                            <li><i class="fa-solid fa-check"></i> Hospitalización 3 días</li>
+                            <li><i class="fa-solid fa-check"></i> Consulta pediátrica postparto</li>
+                            <li><i class="fa-solid fa-check"></i> Plan de lactancia</li>
+                        </ul>
+                        <a href="presupuesto.html" class="btn btn-primary btn-block">Solicitar presupuesto</a>
+                    </div>
+
+                    <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-header">
+                            <h3>Plan VIP</h3>
+                            <div class="pricing-price">
+                                <span class="currency">Bs.</span>
+                                <span class="amount">Consultar</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fa-solid fa-check"></i> Todo lo del Plan Premium</li>
+                            <li><i class="fa-solid fa-check"></i> Acompañante durante el parto</li>
+                            <li><i class="fa-solid fa-check"></i> Habitación Suite con vista</li>
+                            <li><i class="fa-solid fa-check"></i> Hospitalización 4 días</li>
+                            <li><i class="fa-solid fa-check"></i> Servicio de catering</li>
+                            <li><i class="fa-solid fa-check"></i> Sesión fotográfica del nacimiento</li>
+                            <li><i class="fa-solid fa-check"></i> Paquete de bienvenida para el bebé</li>
+                        </ul>
+                        <a href="presupuesto.html" class="btn btn-outline btn-block">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-modern">
+        <div class="footer-background"></div>
+        <div class="container footer-grid footer-grid-3">
+            <div class="footer-col" data-aos="fade-up">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="La Floresta" class="footer-logo-img" onerror="this.src='assets/logo.png';this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex';};">
+                    <i class="fa-solid fa-heart-pulse footer-logo-fallback" style="display:none;"></i>
+                    <h3>La Floresta</h3>
+                </div>
+                <p>Centro Clínico Maternidad La Floresta. RIF: J-12345678-9. Comprometidos con la vida desde el primer latido.</p>
+                <div class="footer-socials" style="margin-top: 24px;">
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link-footer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Contacto Directo</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <p>Urb. La Floresta, Maracay.</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>admision@lafloresta.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>+58 412 1967195</p>
+                </div>
+            </div>
+            <div class="footer-map-col" data-aos="fade-up" data-aos-delay="300">
+                <h4>Ubicación</h4>
+                <div class="footer-map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.123456789!2d-67.123456789!3d10.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24cab9b4de88305a!2sMaternidad%20La%20Floresta!5e0!3m2!1ses!2sve!4v1234567890123!5m2!1ses!2sve" loading="lazy"></iframe>
+                </div>
+                <a href="#" class="btn-review">
+                    <i class="fa-solid fa-star"></i> Dejar Opinión
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Clínica La Floresta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 600, once: true });</script>
+
+    <!-- WOW FACTOR: Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- WOW FACTOR: Vanilla Tilt for 3D Hover -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+</body>
+</html>
